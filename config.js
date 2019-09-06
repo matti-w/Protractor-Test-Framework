@@ -13,13 +13,22 @@ exports.config = {
     //  },
 
 
+/*
+    to run cross browser testing
+     multiCapabilities: [{
+       'browserName' : 'firefox'
+     }, {
+       'browserName' : 'chrome'
+     }],
+*/
 
-    //to run cross browser testing
-    //  multiCapabilities: [{
-    //    'browserName' : 'firefox'
-    //  }, {
-    //    'browserName' : 'chrome'
-    //  }],
+    
+
+     suites :
+        {
+        Smoke : ['spec/LoginPage_spec.js'],
+        Regression : ['spec/HomePage_spec.js' , 'spec/LocationPage_spec.js']
+        },
 
 
 
